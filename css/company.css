@@ -1,0 +1,132 @@
+/* .navigation {
+    grid-row: 2;
+} */
+
+.select {
+    background-color: #9A1212;
+    transform: scale(1.3);
+    color: white;
+}
+
+.select a {
+    color: white;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.f-text {
+    font-size: 20px;
+    color: #9A1212;
+    margin-right: 30px;
+}
+
+.comp-content {
+    grid-column: 1/3;
+    justify-items: center;
+    width: 80vw;
+}
+
+.top-text {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    align-items: center;
+}
+
+/* .comp-content {
+    position: relative;
+    width: 80vw;
+    height: 70vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+} */
+
+.comp-text {
+    /* padding-left: 150px; */
+    font-size: 32px;
+    text-align: right;
+    align-self: center;
+}
+
+.comp-img {
+    position: relative;
+    margin-top: -5%;
+    width: 100%;
+    /* width: 25%; */
+}
+
+@media screen and (max-width: 1200px) {
+    .comp-text {
+        font-size: 25px;
+        /* padding-left: 100px */
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .comp-text {
+        font-size: 18px;
+        /* padding-left: 50px; */
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .select {
+        margin: 0 15px;
+    }
+
+    .comp-img {
+        grid-column: 1/3;
+        width: auto;
+        justify-self: center;
+        margin: 30px 0;
+    }
+
+    .top-text {
+        justify-self: center;
+    }
+
+    .top-text div {
+        grid-column: 1/3;
+    }
+
+    .comp-text {
+        text-align: center;
+        justify-self: center;
+    }
+
+    .f-text {
+        font-size: 16px;
+        margin-right: 10px;
+        margin-left: 5px;
+    }
+
+    .comp-content {
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .select {
+        width: 200px;
+        margin: 0;
+    }
+
+    .navigation li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        width: 160px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .navigation li {
+        width: 100px;
+        margin: 0 10px;
+    }
+}
